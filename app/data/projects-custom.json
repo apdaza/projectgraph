@@ -1,0 +1,114 @@
+{
+    "type": "ProjectGraph",
+    "label": "Custom Project Attributes Example",
+    "protocol": "OLSR",
+    "version": "0.6.6.2",
+    "revision": "6ec73b8f5213cc740816f2fd2ff93108",
+    "metric": "ETX",
+    "router_id": " 2",
+    "nodes": [
+        {
+            "id": " 2",
+            "label": "Datos Básicos",
+            "properties": {
+                "hostname": "proyectos.udistrital.edu.co",
+                "description": "Gestión de datos basicos proyecto curricular"
+            }
+        },
+        {
+            "id": " 3",
+            "label": "Organizaciones",
+            "properties": {
+                "hostname": "oikos.udistrital.edu.co",
+                "description": "Gestión de dependencias"
+            }
+        },
+        {
+            "id": " 4",
+            "label": "Documental",
+            "properties": {
+                "hostname": "nuxeo.udistrital.edu.co",
+                "description": "Gestión documental"
+            }
+        },
+        {
+            "id": " 5",
+            "label": "Datos complementarios",
+            "properties": {
+                "hostname": "proyectos.udistrital.edu.co",
+                "gateway": true
+            }
+        },
+        {
+            "id": " 6",
+            "label": "SNIES",
+            "local_addresses": [
+                "nucleos",
+                "codigos"
+            ],
+            "properties": {
+                "hostname": "snies.udistrital.edu.co",
+                "ssh_pub_key": "ba1aed089f9a513cc8e4ae081b935eb6"
+            }
+        },
+        {
+            "id": " 7",
+            "label": "Proyecto curricular",
+            "properties": {
+                "hostname": "proyectos.udistrital.edu.co",
+                "gateway": true
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": " 2",
+            "target": " 6",
+            "properties": {
+                "type": "fiber"
+            }
+        },
+        {
+            "source": " 2",
+            "target": " 3",
+            "properties": {
+                "type": "fiber"
+            }
+        },
+        {
+            "source": " 2",
+            "target": " 4",
+            "properties": {
+                "type": "fiber"
+            }
+        },
+        {
+            "source": " 5",
+            "target": " 2",
+            "properties": {
+                "type": "fiber"
+            }
+        },
+        {
+            "source": " 5",
+            "target": " 4",
+            "properties": {
+                "type": "fiber"
+            }
+        },
+        {
+            "source": " 7",
+            "target": " 2",
+            "properties": {
+                "type": "fiber"
+            }
+        },
+        {
+            "source": " 7",
+            "target": " 5",
+            "properties": {
+                "type": "fiber"
+            }
+        }
+    ]
+}
