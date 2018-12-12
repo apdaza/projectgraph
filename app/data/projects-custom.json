@@ -1,6 +1,6 @@
 {
     "type": "ProjectGraph",
-    "label": "Custom Project Attributes Example",
+    "label": "Académica",
     "protocol": "OLSR",
     "version": "0.6.6.2",
     "revision": "6ec73b8f5213cc740816f2fd2ff93108",
@@ -93,7 +93,8 @@
             "source": " 5",
             "target": " 4",
             "properties": {
-                "type": "fiber"
+                "type": "fiber",
+                "mandatory": "true"
             }
         },
         {
